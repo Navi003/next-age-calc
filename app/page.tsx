@@ -43,9 +43,18 @@ export default function Home() {
           formData={formData}
         />
         <div className="mt-6">
-          <OutPutField type="Years" value={outPutformData.Year} />
-          <OutPutField type="Month" value={outPutformData.Month} />
-          <OutPutField type="Day" value={outPutformData.Day} />
+          <OutPutField
+            type={outPutformData.Year > 1 ? "Years" : "Year"}
+            value={outPutformData.Year}
+          />
+          <OutPutField
+            type={outPutformData.Month > 1 ? "Months" : "Month"}
+            value={outPutformData.Month}
+          />
+          <OutPutField
+            type={outPutformData.Year > 1 ? "Days" : "Day"}
+            value={outPutformData.Day}
+          />
         </div>
       </Container>
     </main>

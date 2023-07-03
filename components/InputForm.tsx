@@ -42,7 +42,7 @@ const InputForm: FC<PropTypes> = ({
         />
       </div>
 
-      <button className="w-16 h-16 sm:ml-[80%] flex justify-center items-center relative z-50 text-white bg-purple-900 rounded-full ">
+      <button className="w-16 h-16 sm:ml-[80%] flex justify-center items-center relative z-50 text-white bg-purple-700 rounded-full ">
         <img src="icon-arrow.svg" className="w-[50%]" />
       </button>
       <hr className="absolute left-0 w-full border border-gray-200 top-36 " />
