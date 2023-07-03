@@ -30,7 +30,7 @@ export default function Home() {
     const currentAge = calculateAge(
       `${formData.Year.toString()}-${formData.Month.toString()}-${formData.Day.toString()}`
     );
-    console.log(currentAge, "😍");
+
     setOutPutFormData(currentAge);
   };
 

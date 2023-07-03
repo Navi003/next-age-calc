@@ -7,10 +7,10 @@ interface PropTypes {
 const OutPutField: FC<PropTypes> = ({ value, type }): JSX.Element => {
   return (
     <h3>
-      <span className="text-5xl italic font-extrabold text-purple-900">
+      <span className="text-5xl italic font-extrabold text-purple-900 sm:text-7xl">
         {value}
       </span>
-      <span className="ml-3 text-5xl italic font-extrabold text-black">
+      <span className="ml-3 text-5xl italic font-extrabold text-black sm:text-7xl">
         {type}
       </span>
     </h3>

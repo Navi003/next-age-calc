@@ -16,9 +16,9 @@ const InputForm: FC<PropTypes> = ({
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col items-center justify-center max-w-full gap-12 mt-3 "
+      className="relative flex flex-col items-center justify-center max-w-full gap-12 mt-3 "
     >
-      <div className="flex w-full gap-4">
+      <div className="flex w-full gap-4 sm:justify-start">
         <InputBox
           onChange={handleChange}
           value={formData.Day}
@@ -42,9 +42,10 @@ const InputForm: FC<PropTypes> = ({
         />
       </div>
 
-      <button className="w-16 h-16 text-white bg-purple-900 rounded-full ">
-        V
+      <button className="w-16 h-16 sm:ml-[80%] flex justify-center items-center relative z-50 text-white bg-purple-900 rounded-full ">
+        <img src="icon-arrow.svg" className="w-[50%]" />
       </button>
+      <hr className="absolute left-0 w-full border border-gray-200 top-36 " />
     </form>
   );
 };
